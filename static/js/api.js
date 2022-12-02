@@ -59,7 +59,7 @@ async function doit(username, year, month) {
     .then((data) => games = data.games);
   for (x = 0; x < 5; x += 1) {
     console.log(pgn_read(games[x].pgn))
-    foo(games[x].pgn)
+    foo(pgn_read(games[x].pgn))
   }
 }
 
